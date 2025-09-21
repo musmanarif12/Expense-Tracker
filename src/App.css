@@ -1,0 +1,119 @@
+/* Global reset & base styles */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #2e2e2e;            /* Dark grey background */
+  color: #ffffff;                 /* White text */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+}
+
+/* Main wrapper */
+div {
+  box-sizing: border-box;
+}
+
+/* Container for the whole app */
+.app-container {
+  background: #3a3a3a;            /* Slightly lighter grey card */
+  border-radius: 20px;
+  padding: 40px 30px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+h2 {
+  text-align: center;
+  color: #b5ffb5;                 /* Soft green for secondary headings */
+  margin-bottom: 20px;
+}
+
+/* Paragraphs */
+p {
+  margin: 8px 0;
+  text-align: center;
+}
+
+/* Forms */
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+  flex-wrap: wrap;
+}
+
+input[type="text"] {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 2px solid #4caf50;      /* Green border */
+  outline: none;
+  background: #4a4a4a;
+  color: #ffffff;
+  width: 200px;
+  transition: border 0.3s, background 0.3s;
+}
+
+input[type="text"]::placeholder {
+  color: #cccccc;
+}
+
+input[type="text"]:focus {
+  border-color: #81c784;          /* Lighter green on focus */
+  background: #555555;
+}
+
+/* Buttons */
+button {
+  background: #4caf50;            /* Green primary button */
+  color: #ffffff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.1s;
+}
+
+button:hover {
+  background: #66bb6a;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Tracker section spacing */
+.manage-expenses {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 2px solid #4caf50;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .app-container {
+    padding: 25px 15px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+  form {
+    flex-direction: column;
+  }
+}
